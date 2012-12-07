@@ -3,6 +3,13 @@ require 'test_helper'
 class HostsControllerTest < ActionController::TestCase
   setup do
     @host = hosts(:one)
+    @update = {
+      name: 'host123',
+      domain: '.net',
+      ip: '1.1.1.1',
+      description: 'fake',
+      image_url: 'host02.jpg'
+    }
   end
 
   test "should get index" do
@@ -18,7 +25,7 @@ class HostsControllerTest < ActionController::TestCase
 
   test "should create host" do
     assert_difference('Host.count') do
-      post :create, host: @host.attributes
+      post :create, host: @update
     end
 
     assert_redirected_to host_path(assigns(:host))
@@ -35,7 +42,7 @@ class HostsControllerTest < ActionController::TestCase
   end
 
   test "should update host" do
-    put :update, id: @host, host: @host.attributes
+    put :update, id: @host, host: @update
     assert_redirected_to host_path(assigns(:host))
   end
 

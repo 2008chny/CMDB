@@ -1,4 +1,6 @@
 CMDB::Application.routes.draw do
+  resources :services
+
   resources :hosts
 
   get "welcome/index"

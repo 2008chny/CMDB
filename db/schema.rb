@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121206191353) do
+ActiveRecord::Schema.define(:version => 20121207232615) do
 
   create_table "hosts", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,26 @@ ActiveRecord::Schema.define(:version => 20121206191353) do
     t.string   "image_url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "service_hosts", :force => true do |t|
+    t.integer  "service_id"
+    t.integer  "host_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "services", :force => true do |t|
+    t.string   "name"
+    t.integer  "environment_id"
+    t.integer  "technology_id"
+    t.string   "depot"
+    t.string   "directory"
+    t.string   "build_target"
+    t.date     "build_date"
+    t.string   "image_url"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
 end

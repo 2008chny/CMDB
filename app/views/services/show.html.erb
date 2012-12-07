@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @service.name %>
+</p>
+
+<p>
+  <b>Environment:</b>
+  <%= @service.environment_id %>
+</p>
+
+<p>
+  <b>Technology:</b>
+  <%= @service.technology_id %>
+</p>
+
+<p>
+  <b>Depot:</b>
+  <%= @service.depot %>
+</p>
+
+<p>
+  <b>Directory:</b>
+  <%= @service.directory %>
+</p>
+
+<p>
+  <b>Build target:</b>
+  <%= @service.build_target %>
+</p>
+
+<p>
+  <b>Build date:</b>
+  <%= @service.build_date %>
+</p>
+
+<p>
+  <b>Image url:</b>
+  <%= @service.image_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>
