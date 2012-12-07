@@ -1,1 +1,1 @@
-Configuration Management DataBase for Infrastructure Assests
+Configuration Management DataBase for Infrastructure Assets
