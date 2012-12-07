@@ -8,51 +8,55 @@
 Host.delete_all
 
 Host.create(
-	name: 'panda',
-	domain: 'online.ea.com'
-)
-
-Host.create(
 	name: 'dirtysock8',
-	domain: 'tiburon.com'
+	domain: 'tiburon.com',
+	image_url: 'host01.jpg'
 )
 
 Host.create(
 	name: 'panda',
-	domain: 'online.ea.com'
+	domain: 'online.ea.com',
+	image_url: 'host01.jpg'
 )
 
 Host.create(
 	name: 'sdevgos01',
-	domain: 'online.ea.com'
+	domain: 'online.ea.com',
+	image_url: 'host01.jpg'
 )
 
 Host.create(
 	name: '398619-gosprmdb370',
-	domain: 'rspc-iad.ea.com'
+	domain: 'rspc-iad.ea.com',
+	image_url: 'host02.jpg'
 )
 
 Host.create(
 	name: 'dirtysock',
-	domain: 'ea.com'
+	domain: 'ea.com',
+	image_url: 'host02.jpg'
 )
 
 Host.create(
 	name: 'dirtysock2',
-	domain: 'ea.com'
+	domain: 'ea.com',
+	image_url: 'host02.jpg'
 )
 
 Host.create(
 	name: 'gosecmonitor01',
-	domain: 'eao.abn-iad.ea.com'
+	domain: 'eao.abn-iad.ea.com',
+	image_url: 'host02.jpg'
 )
 
 Host.create(
 	name: 'gosprodbeapp0008',
-	domain: 'abn-sjc.ea.com'
+	domain: 'abn-sjc.ea.com',
+	image_url: 'host02.jpg'
 )
 
 Host.create(
 	name: 'nis1',
-	domain: 'ea-colo.ea.com'
+	domain: 'ea-colo.ea.com',
+	image_url: 'host02.jpg'
 )

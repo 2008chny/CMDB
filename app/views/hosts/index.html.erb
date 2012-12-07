@@ -7,7 +7,10 @@
             <%= image_tag(host.image_url, class: 'list_image') %>
         </td>
         <td class='list_description'>
-            <%= host.name + "." + host.domain %>
+            <dl>
+                <dt><%= host.name + "." + host.domain %></dt>
+                <dd><%= host.ip %></dd>
+            </dl>
         </td>
         <td class="list_actions">
             <%= link_to 'Show', host %><br/>

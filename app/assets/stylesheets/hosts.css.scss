@@ -12,12 +12,11 @@
 	}
 
 	.list_image {
-		width: 20px;
-		height: 30px;
+		width: 40px;
 	}
 
 	.list_description {
-		width: 60%;
+		width: 80%;
 
 		dl {
 			margin: 0;
@@ -26,7 +25,6 @@
 		dt {
 			color: #244;
 			font-weight: bold;
-			font-size: larger;
 		}
 
 		dd {
@@ -41,7 +39,7 @@
 	}
 
 	.list_line_even {
-		background: #c0c0c0;
+		background: #ededed;
 	}
 
 	.list_line_odd {
